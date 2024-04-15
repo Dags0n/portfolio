@@ -1,9 +1,10 @@
+import Header from "./pages/Header/Header";
 
 
 const App = () => {
   return (
     <>
-      App
+      <Header />
     </>
   );
 }
