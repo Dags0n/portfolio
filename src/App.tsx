@@ -1,10 +1,11 @@
-import Header from "./pages/Header/Header";
+import Home from "./pages/Home/Home";
+import Header from "./pages/Home/Sections/Header";
 
 
 const App = () => {
   return (
     <>
-      <Header />
+      <Home />
     </>
   );
 }

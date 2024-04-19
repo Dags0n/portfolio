@@ -1,5 +1,5 @@
 import { Box, Button, Container, Grid, styled, Typography } from '@mui/material';
-import Perfil from './../../assets/eu.png';
+import Perfil from './../../../assets/eu.png';
 import DownloadIcon from '@mui/icons-material/Download';
 import LinkedinIcon from '@mui/icons-material/LinkedIn';
 
@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <StyledDiv>
+      <StyledDiv id='home'>
         <Container maxWidth="lg">
           <Grid container>
             
@@ -31,7 +31,7 @@ const Header = () => {
               <Typography color="primary.contrastText" variant="h3" sx={{ textAlign: { xs: 'center', md: 'left' }, marginLeft: { xs: '0px', md: '50px' } }} pt="10px">Software Developer</Typography>
               <Grid container >
                 <Grid item xs={12} md={5} display="flex" justifyContent="center" pt="30px">
-                  <Button variant='contained' color='secondary' href={require('./../../assets/curriculo-dagson.pdf')} download="curriculo-dagson.pdf">
+                  <Button variant='contained' color='secondary' href={require('./../../../assets/curriculo-dagson.pdf')} download="curriculo-dagson.pdf">
                     <DownloadIcon />
                     <Typography color="primary.contrastText" pl='10px'>Download CV</Typography>
                   </Button>
