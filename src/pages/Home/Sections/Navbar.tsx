@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { AppBar, Avatar, Box, Button, Container, Toolbar, Typography } from '@mui/material';
-import AdbIcon from '@mui/icons-material/Adb';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import TemporaryDrawer from './Drawer';
 import Perfil from './../../../assets/eu.png';
+import Logo from './../../../assets/dg.png';
 
-const pages = ['home', 'projects', 'skills', 'services', 'about' ,'contact'];
+const pages = ['home', 'about', 'experience', 'projects', 'skills', 'services', 'contact'];
 
 interface ElevationScrollProps {
   children: React.ReactElement;
@@ -33,7 +33,7 @@ function ResponsiveAppBar() {
       <AppBar position='fixed'>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <Avatar alt="Dagson Gabriel" src={ Logo } sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
             <Typography
               variant="h6"
               noWrap
@@ -55,7 +55,7 @@ function ResponsiveAppBar() {
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>  
               <TemporaryDrawer />
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+            <Avatar alt="Dagson Gabriel" src={ Logo } sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}/>
             <Typography
               variant="h5"
               noWrap
@@ -87,7 +87,7 @@ function ResponsiveAppBar() {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Avatar alt="Remy Sharp" src={ Perfil } />
+              <Avatar alt="Dagson Gabriel" src={ Perfil } />
             </Box>
           </Toolbar>
         </Container>
