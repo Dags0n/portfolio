@@ -27,11 +27,10 @@ function ElevationScroll(props: ElevationScrollProps) {
 }
 
 function ResponsiveAppBar() {
-
   return (
     <ElevationScroll>
       <AppBar position='fixed'>
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" style={{ backgroundColor: 'inherit' }}>
           <Toolbar disableGutters>
             <Avatar alt="Dagson Gabriel" src={ Logo } sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
             <Typography
@@ -51,7 +50,6 @@ function ResponsiveAppBar() {
             >
               DAGSON
             </Typography>
-
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>  
               <TemporaryDrawer />
             </Box>
@@ -79,7 +77,7 @@ function ResponsiveAppBar() {
                 <Button
                   key={page}
                   href={`#${page}`}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
+                  sx={{ my: 2, color: 'white', display: 'block', '&:hover': { color: 'black' } }}
                 >
                   {page}
                 </Button>

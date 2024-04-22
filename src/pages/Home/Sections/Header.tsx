@@ -10,7 +10,7 @@ const Header = () => {
     minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
-}));
+  }));
 
   const StyledImg = styled('img')(({ theme }) => ({
     width: '75%',
@@ -24,7 +24,6 @@ const Header = () => {
       <StyledDiv id='home'>
         <Container maxWidth="lg">
           <Grid container>
-            
             <Grid item xs={12} md={8}>
               <Typography color="primary.contrastText" variant="h4" sx={{ textAlign: { xs: 'center', md: 'left' }, marginLeft: { xs: '0px', md: '50px' } }}>Hello World!</Typography>
               <Typography color="primary.contrastText" variant="h1" sx={{ textAlign: { xs: 'center', md: 'left' }, marginLeft: { xs: '0px', md: '50px' } }}>I'm Dagson</Typography>
