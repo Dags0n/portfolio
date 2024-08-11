@@ -22,7 +22,11 @@ function ElevationScroll(props: ElevationScrollProps) {
 
   return React.cloneElement(children, {
     elevation: trigger ? 10 : 0,
-    style: { visibility: trigger ? 'visible' : 'hidden' },
+    style: { 
+      visibility: trigger ? 'visible' : 'hidden',
+      transition: 'visibility 0.5s, opacity 0.5s linear',
+      opacity: trigger ? 1 : 0,
+    },
   });
 }
 
