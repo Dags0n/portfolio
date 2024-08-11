@@ -76,7 +76,12 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  href={`#${page}`}
+                  onClick={() => {
+                    const element = document.getElementById(page);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
                   sx={{ my: 2, color: 'white', display: 'block', '&:hover': { color: 'black' } }}
                 >
                   {page}
