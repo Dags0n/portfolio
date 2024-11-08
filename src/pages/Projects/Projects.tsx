@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 const Experience = () => {
 
   const StyledDiv = styled('div')(({ theme }) => ({
+    backgroundColor: theme.palette.primary.main,
     minHeight: '100vh',
     display: 'flex',
   }));
@@ -14,12 +15,12 @@ const Experience = () => {
           <Container>
             <Grid container>
               <Grid item xs={12}>
-                <Typography variant="h3" component="h1" sx={{textAlign: 'center', paddingTop: '50px', margin: { xs: '40px 0 30px 0', md: '70px 0 30px' }, alignSelf: 'flex-start'}}>
-                  <span style={{ color: '#1e88e5' }}>PRO</span>JECTS
+                <Typography variant="h3" component="h1" sx={{textAlign: 'center', paddingTop: '30px', margin: { xs: '40px 0 30px 0', md: '70px 0 30px' }, alignSelf: 'flex-start'}}>
+                  PRO<span style={{ color: '#fff' }}>JECTS</span>
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography sx={{ textAlign: 'center', mt: '125px' }}>
+                <Typography sx={{ textAlign: 'center', mt: '125px', color: '#fff' }}>
                   SOON...
                 </Typography>
               </Grid>
