@@ -66,34 +66,34 @@ const Services = () => {
   return (
     <StyledDiv id='services'>
       <Container>
-      <Grid container sx={{ display: 'flex', justifyContent: 'center' }}>
-        <Grid item xs={12}>
-          <Typography variant="h3" component="h1" sx={{ textAlign: 'center', padding: '20px 0 20px', m: { xs: '40px 0 30px 0', md: '70px 0 30px' }}}>
-            SER<span style={{ color: '#1e88e5' }}>VICES</span>
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Grid container sx={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
-            {services.map((service, index) => (
-              <Grid key={index} item xs={12} sm={5} sx={{ display: 'flex', justifyContent: { xs: 'center', md: index%2 === 0 ? 'flex-end' : 'flex-start' }, mb: '40px' }}>
-                <StyledCard>
-                  <CardContent sx={{ display: 'block', justifyItems: 'center' }}>
-                    <IconDiv>
-                      <FontAwesomeIcon icon={service.icon} style={{ width: '30px', height: '30px'}}/>
-                    </IconDiv>
-                    <Typography variant="body1" component="div" fontWeight={900} fontFamily="Roboto, sans-serif" textAlign="center" sx={{ m: { xs: '5px 0 5px 0', md: '15px 0 15px 0'} }}>
-                      {service.title}
-                    </Typography>
-                    <Typography variant="body2" textAlign="center" sx={{ width: { md: '200px' }, wordWrap: 'break-word' }}>
-                      {service.description}
-                    </Typography>
-                  </CardContent>
-                </StyledCard>
-              </Grid>
-            ))}
+        <Grid container sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={12}>
+            <Typography variant="h3" component="h1" sx={{ textAlign: 'center', padding: '20px 0 20px', m: { xs: '40px 0 30px 0', md: '70px 0 30px' }}}>
+              SER<span style={{ color: '#1e88e5' }}>VICES</span>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Grid container sx={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+              {services.map((service, index) => (
+                <Grid key={index} item xs={12} sm={5} sx={{ display: 'flex', justifyContent: { xs: 'center', md: index%2 === 0 ? 'flex-end' : 'flex-start' }, mb: '40px' }}>
+                  <StyledCard>
+                    <CardContent sx={{ display: 'block', justifyItems: 'center' }}>
+                      <IconDiv>
+                        <FontAwesomeIcon icon={service.icon} style={{ width: '30px', height: '30px'}}/>
+                      </IconDiv>
+                      <Typography variant="body1" component="div" fontWeight={900} fontFamily="Roboto, sans-serif" textAlign="center" sx={{ m: { xs: '5px 0 5px 0', md: '15px 0 15px 0'} }}>
+                        {service.title}
+                      </Typography>
+                      <Typography variant="body2" textAlign="center" sx={{ width: { md: '200px' }, wordWrap: 'break-word' }}>
+                        {service.description}
+                      </Typography>
+                    </CardContent>
+                  </StyledCard>
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
         </Grid>
-      </Grid>
       </Container>
     </StyledDiv>
   );
