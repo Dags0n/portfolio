@@ -93,7 +93,7 @@ const handleSubmit = () => {
 
 const Contact = () => {
   return (
-    <StyledDiv>
+    <StyledDiv id="contact">
       <Container>
         <Grid container>
           <Grid item xs={12}>
