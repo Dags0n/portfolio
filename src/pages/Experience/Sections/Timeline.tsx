@@ -31,6 +31,41 @@ export default function NoOppositeContent() {
             Full-Stack Developer
           </Typography>
           <Typography>
+            STI/UFRN
+          </Typography>
+          <Typography mb="20px">
+            September 2024 - Present
+          </Typography>
+          <Typography maxWidth="500px" textAlign="justify">
+            I am part of the development team for the Multiprova platform, a system for managing and administering academic exams used by teachers and institutions. My main responsibilities include:
+          </Typography>
+          <Typography>
+          <List>
+            <ListItem sx={{ mb: '-15px' }}>
+              <ListItemText primary="• Contributing to feature development on both the front-end and back-end;" />
+            </ListItem>
+            <ListItem sx={{ mb: '-15px' }}>
+              <ListItemText primary="• Fixing bugs and optimizing code to ensure system stability and efficiency;" />
+            </ListItem>
+            <ListItem>
+              <ListItemText primary="• Consistently collaborating with the team to address user-reported issues." />
+            </ListItem>
+          </List>            
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="primary">
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: '#1e88e5' }}/>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Typography variant="h5" component="span" fontWeight="bold">
+            Full-Stack Developer
+          </Typography>
+          <Typography>
             DCODING
           </Typography>
           <Typography mb="20px">
